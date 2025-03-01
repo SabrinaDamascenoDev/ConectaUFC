@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { useFonts } from 'expo-font';
+import { Poppins_400Regular, Poppins_700Bold, Poppins_200ExtraLight, Poppins_100Thin, Poppins_300Light } from '@expo-google-fonts/poppins';
 
 // Importando pages
 import Home from './src/pages/home';
@@ -11,6 +13,14 @@ import InicialPage from './src/pages/inicialPage';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    Poppins_400Regular,
+    Poppins_700Bold,
+    Poppins_100Thin,
+    Poppins_200ExtraLight,
+    Poppins_300Light
+});
+
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Inicial'>
