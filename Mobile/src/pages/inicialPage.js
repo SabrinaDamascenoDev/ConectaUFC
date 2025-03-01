@@ -7,9 +7,9 @@ const { width } = Dimensions.get("window");
 
 // Dados do carrossel
 const data = [
-    { id: "1", text: "Bem-vindo(a) ao Conecta UFC" },
+    { id: "1", text: "Bem-vindo(a) ao Conecta UFC, seu portal acadêmico digital!" },
     { id: "2", text: "Acesse tudo o que precisa para suas disciplinas em um só lugar!" },
-    { id: "3", text: "Junte-se à nossa comunidade." }
+    { id: "3", text: "Junte-se à nossa comunidade e torne sua rotina universitária mais prática!" }
 ];
 import BtnOutline from "../components/btnOutline";
 import Botao from "../components/btn";
