@@ -10,7 +10,7 @@ export default function Botao({text, onPress}){
 const styles = StyleSheet.create({
     containerBtn: {
         width: '90%',
-        height: '30%',
+        height: 50,
         backgroundColor: 'white',
         borderRadius: 5,
         alignContent: 'center',

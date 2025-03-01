@@ -1,16 +1,27 @@
-import { View, StyleSheet, Text } from "react-native"
-export default function btnOutline(){
+import { View, StyleSheet, Text, TouchableOpacity } from "react-native"
+export default function BtnOutline({text}){
     return(
-        <View style={styles.containerBtn}>
-            <Text>sd</Text>
-        </View>
+        <TouchableOpacity style={styles.containerBtn}>
+            <Text style={styles.textBtn}>{text}</Text>
+        </TouchableOpacity>
     )
 }
 
 const styles = StyleSheet.create({
     containerBtn: {
         width: '90%',
-        borderWidth: 2,
-        borderColor: 'white'
+        height: 50, 
+        backgroundColor: 'transparent',
+        borderRadius: 5,
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderColor: 'white',
+        borderWidth: 1
+    },
+    textBtn:{
+        fontFamily: 'JuliusSansOne_400Regular',
+        fontSize: 18,
+        color: 'white'
     }
 })

@@ -11,7 +11,7 @@ const data = [
     { id: "2", text: "Acesse tudo o que precisa para suas disciplinas em um só lugar!" },
     { id: "3", text: "Junte-se à nossa comunidade." }
 ];
-import btnOutline from "../components/btnOutline";
+import BtnOutline from "../components/btnOutline";
 import Botao from "../components/btn";
 
 export default function InicialPage() {
@@ -51,9 +51,11 @@ export default function InicialPage() {
                 </View>
 
                 <View style = {styles.botoes}>
-                    <Text style = {styles.bntTexto}>Já possui Login?</Text>
-                    <View style = {styles.botaoStyle}>
-                        <Botao text={'ACESSAR'}/>
+                    <Text style = {styles.bntTexto2}>Já possui Login?</Text>
+                    <Botao text={'ACESSAR'}/>
+                    <View style={styles.botaoSec}>
+                        <Text style = {styles.bntTexto}>Ainda não possui cadastro?</Text>
+                        <BtnOutline text={'CADASTRE-SE'}/>
                     </View>
                 </View>
             </View>
@@ -68,12 +70,13 @@ const styles = StyleSheet.create({
         height: "100%",
     },
     container: {
+        flex: 1,
         alignItems: "center",
         marginTop: '30%'
     },
     image: {
-        width: "55%",
-        height: "30%",
+        width: "59%",
+        height: "35%",
 
     },
     text: {
@@ -107,20 +110,32 @@ const styles = StyleSheet.create({
         marginTop: '15%'
 
     },
-    botoes:{
+    botoes: {
         width: '100%',
-        marginTop:'18%'
-    },
-    botaoStyle:{
-        height: '50%',
+        marginTop: '15%',
         alignContent: 'center',
         alignItems: 'center',
-        marginTop: '2%'
+
     },
+
+    botaoSec: {
+        width: '100%',
+        alignContent: 'center',
+        alignItems: 'center',
+        marginTop: '7%'
+    },
+    
     bntTexto:{
-        marginLeft:'5%',
+        marginRight:'35%',
+        fontFamily: 'Poppins_400Regular',
+        color: 'white',
+        fontSize: 15
+    },
+    bntTexto2:{
+        marginRight: '58%',
         fontFamily: 'Poppins_400Regular',
         color: 'white',
         fontSize: 15
     }
+   
 });
