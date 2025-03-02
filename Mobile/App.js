@@ -9,7 +9,7 @@ import { JuliusSansOne_400Regular } from "@expo-google-fonts/julius-sans-one";
 // Importando pages
 import Home from './src/pages/home';
 import InicialPage from './src/pages/inicialPage';
-
+import Login from './src/pages/Login';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +28,7 @@ export default function App() {
       <Stack.Navigator initialRouteName='Inicial'>
         <Stack.Screen name="Inicial" component={InicialPage} options={{ headerShown: false }}/>
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Login" component={Login}  options={{headerShown: false}} />
       </Stack.Navigator>
       
       <StatusBar style="auto" />

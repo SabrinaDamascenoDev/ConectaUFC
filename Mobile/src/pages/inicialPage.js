@@ -52,7 +52,7 @@ export default function InicialPage() {
 
                 <View style = {styles.botoes}>
                     <Text style = {styles.bntTexto2}>Já possui Login?</Text>
-                    <Botao text={'ACESSAR'}/>
+                    <Botao text={'ACESSAR'} screen={"Login"}/>
                     <View style={styles.botaoSec}>
                         <Text style = {styles.bntTexto}>Ainda não possui cadastro?</Text>
                         <BtnOutline text={'CADASTRE-SE'}/>

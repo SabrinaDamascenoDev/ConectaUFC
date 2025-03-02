@@ -1,7 +1,9 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native"
-export default function Botao({text, onPress}){
+import { useNavigation } from "@react-navigation/native"
+export default function Botao({text, screen}){
+    const navigation = useNavigation();
     return(
-        <TouchableOpacity style={styles.containerBtn}>
+        <TouchableOpacity style={styles.containerBtn} onPress={() => navigation.navigate(screen)}>
             <Text style={styles.textBtn}>{text}</Text>
         </TouchableOpacity>
     )
