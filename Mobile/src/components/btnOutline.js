@@ -1,7 +1,9 @@
 import { View, StyleSheet, Text, TouchableOpacity } from "react-native"
-export default function BtnOutline({text}){
+import { useNavigation } from "@react-navigation/native"
+export default function BtnOutline({text, screen}){
+    const navigation = useNavigation();
     return(
-        <TouchableOpacity style={styles.containerBtn}>
+        <TouchableOpacity style={styles.containerBtn} onPress={() => navigation.navigate(screen)}>
             <Text style={styles.textBtn}>{text}</Text>
         </TouchableOpacity>
     )
