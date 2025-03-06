@@ -11,7 +11,7 @@ export default function BtnOutline({text, screen}){
 
 const styles = StyleSheet.create({
     containerBtn: {
-        width: '90%',
+        width: '87%',
         height: 50, 
         backgroundColor: 'transparent',
         borderRadius: 5,

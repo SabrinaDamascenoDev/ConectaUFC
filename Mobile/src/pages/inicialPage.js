@@ -126,13 +126,13 @@ const styles = StyleSheet.create({
     },
     
     bntTexto:{
-        marginRight:'35%',
+        marginRight:'32%',
         fontFamily: 'Poppins_400Regular',
         color: 'white',
         fontSize: 15
     },
     bntTexto2:{
-        marginRight: '58%',
+        marginRight: '55%',
         fontFamily: 'Poppins_400Regular',
         color: 'white',
         fontSize: 15

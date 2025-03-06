@@ -1,4 +1,5 @@
 import { View, ImageBackground, StyleSheet, Image, Text } from "react-native"
+import Input from "../components/Input"
 
 export default function Login(){
     return(
@@ -7,6 +8,9 @@ export default function Login(){
                 <View style={styles.logoContainer}>
                     <Image source={require("../../assets/Logo2.png")} style={styles.logo} />
                     <Text style={styles.textLogo}>Bem-vindo(a) de volta ao conecta UFC.</Text>
+                </View>
+                <View>
+                    <Input placeholder={"Digite o seu Email"}/>
                 </View>
             </View>
         </ImageBackground>
